@@ -1,4 +1,4 @@
 const baseURL = "https://ghibliapi.vercel.app/films"
-const containerDiv = document.getElementById('container')
+const filmContainerDiv = document.getElementById('filmContainer')
 const searchDiv = document.getElementById('searchContainer')
 let searchInput = document.getElementById('search')
