@@ -68,6 +68,18 @@ a {
     text-decoration: none;
 }
 
+/*==== Studio Ghibli Banner ====*/
+.ghibliBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ghibliBanner img {
+    max-height: 100%;
+    max-width: 40%;
+}
+
 /*==== Navigation Bar ====*/
 .navBar {
     letter-spacing: 0.04em;
@@ -88,10 +100,20 @@ a {
     text-decoration: underline;
 }
 
-/*==== Studio Ghibli Banner ====*/
-
 /*==== Search Bar ====*/
 
 /*==== Div Container for JS ====*/
 
 /*==== Card Styling within FilmDiv ====*/
+
+/*==== Footer ====*/
+.footer__container {
+    padding: 3rem 0 7rem;
+    text-align: center;
+}
+
+.footer__copy {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
