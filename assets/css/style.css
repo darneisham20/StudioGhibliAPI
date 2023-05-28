@@ -3,6 +3,7 @@
 :root {
     /*==== Colors ====*/
     --text-color: #373737;
+    --text-color-light: #828287;
     --title-color: #272727;
 
     /*==== Font and typography ====*/
@@ -101,6 +102,47 @@ a {
 }
 
 /*==== Search Bar ====*/
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__bar {
+    display: flex;
+    width: 20em;
+    height: 1.2em;
+    border-radius: 60px;
+    box-shadow: 0 0 10px var(--text-color-light);
+    padding: 10px 20px;
+}
+
+.search__bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 0px 10px;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+::placeholder {
+    color: var(--text-color-light);
+}
+
+.search__bar button {
+    border: 0;
+    width: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search__bar button i {
+    font-size: 1rem;
+    font-weight: initial;
+    color: pink;
+}
 
 /*==== Div Container for JS ====*/
 
