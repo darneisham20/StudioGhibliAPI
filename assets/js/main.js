@@ -55,13 +55,13 @@ function getFilmResults(e) {
     .then(data => {
         const movieResult = data.filter(film => film.title.toLowerCase().includes(searchInput.value.toLowerCase()))
         console.log(movieResult)
-        makeMovieDiv(movieResult[0].image, movieResult[0].title, movieResult[0].original_title, movieResult[0].original_title_romanised, movieResult[0].release_date, movieResult[0].director, movieResult[0].producer, movieResult[0].description, searchDiv)
+        makeMovieDiv(movieResult[0].image, movieResult[0].title, movieResult[0].original_title, movieResult[0].original_title_romanised, movieResult[0].release_date, movieResult[0].director, movieResult[0].producer, movieResult[0].running_time, movieResult[0].description, searchDiv)
     })
     .catch(error => (console.log(`Error: Unknown Film, ${error}`)))
 }
 
 // SEARCH BAR RESULTS
-const makeMovieDiv = (image, title, original_title, original_title_romanised, release_date, director, producer, description, divForInfo) => {
+const makeMovieDiv = (image, title, original_title, original_title_romanised, release_date, director, producer, running_time, description, divForInfo) => {
     divForInfo.innerHTML = ""
 
     const movieDiv = document.createElement('div')
@@ -72,6 +72,7 @@ const makeMovieDiv = (image, title, original_title, original_title_romanised, re
     const movieReleaseDate = document.createElement('p')
     const movieDirector = document.createElement('p')
     const movieProducer = document.createElement('p')
+    const movieRunningTime = document.createElement('p')
     const movieDescription = document.createElement('p')
 
     moviePic.src = image
@@ -89,6 +90,9 @@ const makeMovieDiv = (image, title, original_title, original_title_romanised, re
     movieDirector.textContent = `Director: ${director} | Producer: ${producer}`
     movieDirector.style = "font-weight: 400; color: #373737;"
 
+    movieRunningTime.textContent = `Runtime (minutes): ${running_time}`
+    movieRunningTime.style - "color: #373737;"
+
     movieDescription.textContent = description
     movieDescription.style = "color: #373737;"
 
@@ -99,6 +103,7 @@ const makeMovieDiv = (image, title, original_title, original_title_romanised, re
     movieDiv.appendChild(movieReleaseDate)
     movieDiv.appendChild(movieDirector)
     movieDiv.appendChild(movieProducer)
+    movieDiv.appendChild(movieRunningTime)
     movieDiv.appendChild(movieDescription)
 
     divForInfo.appendChild(movieDiv)
