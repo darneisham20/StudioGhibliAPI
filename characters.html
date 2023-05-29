@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- ==== CSS ==== -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/characters.css">
 
     <!-- ==== FAVICON ==== -->
     <link rel="icon" href="./assets/img/favicon.png">
@@ -20,8 +22,8 @@
     <div class="navBar">
         <nav class="navMenu">
             <ul>
-                <li><a href="javascript:window.location.reload();">Films</a></li>
-                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./index.html">Films</a></li>
+                <li><a href="javascript:window.location.reload();">Characters</a></li>
                 <li><a href="./locations.html">Locations</a></li>
                 <li><a href="https://ghibliapi.vercel.app" target="_blank"> Studio Ghibli API</a></li>
             </ul>
@@ -36,19 +38,19 @@
     
         <div class="searchBar">
             <form action="#" class="search__bar">
-                <input type="text" name="search" id="search" placeholder="Search films..." autocomplete="off" onkeypress="if (window.event.keyCode == 13) getFilmResults(event)">
+                <input type="text" name="search" id="search" placeholder="Search characters..." autocomplete="off" onkeypress="if (window.event.keyCode == 13) getCharacterResults(event)">
 
                 <button type="submit" id="search__button">
-                    <i class="uil uil-search" onclick="getFilmResults(event)"></i>
+                    <i class="uil uil-search" onclick="getCharacterResults(event)"></i>
                 </button>
             </form>
         </div>
 
-        <div id="searchContainer"></div>
+        <div id="characterSearchContainer"></div>
     
-        <div id="container"></div>
+        <div id="characterContainer"></div>
     </main>
-    
+
 
     <!-- ==== FOOTER ==== -->
     <footer class="footer">
@@ -63,6 +65,6 @@
     </footer>
 
     <!-- ==== JS ==== -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/characters.js"></script>
 </body>
 </html>
