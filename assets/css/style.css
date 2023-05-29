@@ -55,6 +55,8 @@ html, body {
     font-size: var(--normal-font-size);
     color: var(--text-color);
     background: linear-gradient(var(--first-color), var(--third-color));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -122,6 +124,7 @@ a {
     height: 1.2em;
     border-radius: 60px;
     /* box-shadow: 0 0 10px var(--text-color-white); */
+    background-color: var(--third-color);
     padding: 10px 20px;
 }
 

@@ -31,8 +31,8 @@ const makeFilmDiv = (image, title, original_title, director, description, divFor
     filmOriginalTitle.textContent = original_title
     filmOriginalTitle.style = "color: #FFFFFF;"
 
-    filmDirector.textContent = `Director: ${director}`
-    filmDirector.style = "font-weight: 400; color: #FFFFFF;"
+    // filmDirector.textContent = `Director: ${director}`
+    // filmDirector.style = "font-weight: 400; color: #FFFFFF;"
 
     // filmDescription.textContent = description
     // filmDescription.style = "max-width: 250px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; color: #FFFFFF;"

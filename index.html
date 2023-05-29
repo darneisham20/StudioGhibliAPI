@@ -20,7 +20,7 @@
     <div class="navBar">
         <nav class="navMenu">
             <ul>
-                <li><a href="javascript:window.location.reload();">Home</a></li>
+                <li><a href="javascript:window.location.reload();">Films</a></li>
                 <li><a href="https://ghibliapi.vercel.app/#"> Studio Ghibli API</a></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
     
         <div class="searchBar">
             <form action="#" class="search__bar">
-                <input type="text" name="search" id="search" placeholder="Search films..." autocomplete="off">
+                <input type="text" name="search" id="search" placeholder="Search films..." autocomplete="off" onkeypress="if (window.event.keyCode == 13) getFilmResults(event)">
 
                 <button type="submit" id="search__button">
                     <i class="uil uil-search" onclick="getFilmResults(event)"></i>
