@@ -221,6 +221,20 @@ a {
     text-align: center;
 }
 
+.footer__text {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-white);
+}
+
+.footer__text a, .footer__text a:visited {
+    color: var(--text-color-white);
+}
+
+.footer__text a:hover {
+    text-decoration: underline;
+}
+
 .footer__copy {
     display: block;
     font-size: var(--smaller-font-size);
