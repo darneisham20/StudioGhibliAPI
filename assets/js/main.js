@@ -42,7 +42,6 @@ const makeFilmDiv = (image, title, original_title, director, description, divFor
     filmDiv.appendChild(filmOriginalTitle)
     filmDiv.appendChild(filmDirector)
     filmDiv.appendChild(filmDescription)
-
     divForInfo.appendChild(filmDiv)
 }
 

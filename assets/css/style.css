@@ -123,7 +123,6 @@ a {
     width: 20em;
     height: 1.2em;
     border-radius: 60px;
-    /* box-shadow: 0 0 10px var(--text-color-white); */
     background-color: var(--third-color);
     padding: 10px 20px;
 }
