@@ -26,16 +26,16 @@ const makeFilmDiv = (image, title, original_title, director, description, divFor
     filmPic.style = "height: 400px; width: auto;"
 
     filmTitle.textContent = title
-    filmTitle.style = "font-weight: 700; color: #373737;"
+    filmTitle.style = "font-weight: 700; color: #FFFFFF;"
 
     filmOriginalTitle.textContent = original_title
-    filmOriginalTitle.style = "color: #373737;"
+    filmOriginalTitle.style = "color: #FFFFFF;"
 
     filmDirector.textContent = `Director: ${director}`
-    filmDirector.style = "font-weight: 400; color: #373737;"
+    filmDirector.style = "font-weight: 400; color: #FFFFFF;"
 
     // filmDescription.textContent = description
-    // filmDescription.style = "max-width: 250px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; color: #373737;"
+    // filmDescription.style = "max-width: 250px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; color: #FFFFFF;"
 
     filmDiv.appendChild(filmPic)
     filmDiv.appendChild(filmTitle)
@@ -79,22 +79,22 @@ const makeMovieDiv = (image, title, original_title, original_title_romanised, re
     moviePic.style = "height: 400px; width: auto;"
 
     movieTitle.textContent = title
-    movieTitle.style = "font-weight: 700; color: #373737;"
+    movieTitle.style = "font-weight: 700; color: #FFFFFF;"
 
     movieOriginalTitle.textContent = `${original_title} | ${original_title_romanised}`
-    movieOriginalTitle.style = "color: #373737;"
+    movieOriginalTitle.style = "color: #FFFFFF;"
 
     movieReleaseDate.textContent = `Release Date: ${release_date}`
-    movieReleaseDate.style = "color: #373737;"
+    movieReleaseDate.style = "color: #FFFFFF;"
 
     movieDirector.textContent = `Director: ${director} | Producer: ${producer}`
-    movieDirector.style = "font-weight: 400; color: #373737;"
+    movieDirector.style = "font-weight: 400; color: #FFFFFF;"
 
     movieRunningTime.textContent = `Runtime (minutes): ${running_time}`
-    movieRunningTime.style - "color: #373737;"
+    movieRunningTime.style = "color: #FFFFFF;"
 
     movieDescription.textContent = description
-    movieDescription.style = "color: #373737;"
+    movieDescription.style = "color: #FFFFFF;"
 
     movieDiv.appendChild(moviePic)
     movieDiv.appendChild(movieTitle)

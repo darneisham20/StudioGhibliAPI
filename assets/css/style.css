@@ -2,8 +2,12 @@
 
 :root {
     /*==== Colors ====*/
+    --first-color: #7bccf4;
+    --second-color: #5cbcf2;
+    --third-color: #049beb;
     --text-color: #373737;
     --text-color-light: #828287;
+    --text-color-white: #FFFFFF;
     --title-color: #272727;
 
     /*==== Font and typography ====*/
@@ -50,12 +54,17 @@ html, body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--text-color);
+    background: linear-gradient(var(--first-color), var(--third-color));
 }
 
 h1, h2, h3 {
     color: var(--title-color);
     font-family: var(--title-font);
     font-weight: var(--font-medium);
+}
+
+h3 {
+    letter-spacing: 1px;
 }
 
 ul {
@@ -91,12 +100,12 @@ a {
 }
 
 .navMenu li a, .navMenu li a:visited {
-    color: var(--text-color);
+    color: var(--text-color-white);
     padding: 0.3em 0.6em;
 }
 
 .navMenu li a:hover {
-    color: var(--title-color);
+    color: var(--text-color-white);
     text-decoration: underline;
 }
 
@@ -112,7 +121,7 @@ a {
     width: 20em;
     height: 1.2em;
     border-radius: 60px;
-    box-shadow: 0 0 10px var(--text-color-light);
+    /* box-shadow: 0 0 10px var(--text-color-white); */
     padding: 10px 20px;
 }
 
@@ -123,11 +132,11 @@ a {
     outline: none;
     padding: 0px 10px;
     font-size: var(--normal-font-size);
-    color: var(--text-color);
+    color: var(--text-color-white);
 }
 
 ::placeholder {
-    color: var(--text-color-light);
+    color: var(--text-color-white);
 }
 
 .search__bar button {
@@ -140,7 +149,7 @@ a {
 .search__bar button i {
     font-size: 1rem;
     font-weight: initial;
-    color: pink;
+    color: var(--text-color-white);
 }
 
 /*==== Div Container for JS ====*/
@@ -180,7 +189,7 @@ a {
 
 /*==== Card Styling - FilmDiv ====*/
 #card img:hover {
-    box-shadow: 2px 8px 10px rgba(43, 43, 43, 0.473);
+    box-shadow: 2px 6px 8px rgba(43, 43, 43, 0.473);
     transform: translate3D(0, -2px, 0);
     transition: all 350ms ease-in-out;
 }
@@ -206,14 +215,14 @@ a {
 
 /*==== Footer ====*/
 .footer__container {
-    padding: 3rem 0 7rem;
+    padding: 3rem 0 3rem;
     text-align: center;
 }
 
 .footer__copy {
     display: block;
     font-size: var(--smaller-font-size);
-    color: var(--text-color);
+    color: var(--text-color-white);
 }
 
 /*==== SCROLL BAR ====*/
