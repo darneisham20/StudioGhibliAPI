@@ -66,7 +66,7 @@ const makeCharacterDiv = (name, species, gender, age, eye_color, hair_color, fil
     characterName.textContent = name
     characterName.style = "font-weight: 700; color: #FFFFFF;"
 
-    characterSpecies.textContent = species
+    characterSpecies.textContent = `Species: ${species.name}`
     characterSpecies.style = "color: #FFFFFF"
 
     characterGender.textContent = `Gender: ${gender}`

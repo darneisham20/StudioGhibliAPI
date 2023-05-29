@@ -8,19 +8,17 @@ fetch(baseURL)
 .then(D => {
     console.log(D)
     D.forEach(film => { 
-        makeFilmDiv(film.image, film.title, film.original_title, film.director, film.description, containerDiv)
+        makeFilmDiv(film.image, film.title, film.original_title, containerDiv)
     });
 })
 
 // FILM PULL
-const makeFilmDiv = (image, title, original_title, director, description, divForInfo) => {
+const makeFilmDiv = (image, title, original_title, divForInfo) => {
     const filmDiv = document.createElement('div')
     filmDiv.setAttribute('id', 'card')
     const filmPic = document.createElement('img')
     const filmTitle = document.createElement('h3')
     const filmOriginalTitle = document.createElement('h3')
-    const filmDirector = document.createElement('p')
-    const filmDescription = document.createElement('p')
 
     filmPic.src = image
     filmPic.style = "height: 400px; width: auto;"
@@ -31,17 +29,10 @@ const makeFilmDiv = (image, title, original_title, director, description, divFor
     filmOriginalTitle.textContent = original_title
     filmOriginalTitle.style = "color: #FFFFFF;"
 
-    // filmDirector.textContent = `Director: ${director}`
-    // filmDirector.style = "font-weight: 400; color: #FFFFFF;"
-
-    // filmDescription.textContent = description
-    // filmDescription.style = "max-width: 250px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; color: #FFFFFF;"
-
     filmDiv.appendChild(filmPic)
     filmDiv.appendChild(filmTitle)
     filmDiv.appendChild(filmOriginalTitle)
-    filmDiv.appendChild(filmDirector)
-    filmDiv.appendChild(filmDescription)
+    
     divForInfo.appendChild(filmDiv)
 }
 
