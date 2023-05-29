@@ -11,6 +11,8 @@
 
 ## Live Demo
 
+[Live Demo Link](https://darneisham20.github.io/StudioGhibliAPI/)
+
 ## Author
 
 Darneisha Miller
