@@ -32,7 +32,7 @@ const makeFilmDiv = (image, title, original_title, divForInfo) => {
     filmDiv.appendChild(filmPic)
     filmDiv.appendChild(filmTitle)
     filmDiv.appendChild(filmOriginalTitle)
-    
+
     divForInfo.appendChild(filmDiv)
 }
 
