@@ -69,7 +69,7 @@ const makeMovieDiv = (image, title, original_title, original_title_romanised, re
     moviePic.style = "height: 400px; width: auto;"
 
     movieTitle.textContent = title
-    movieTitle.style = "font-weight: 700; color: #FFFFFF;"
+    movieTitle.style = "font-weight: 700; color: #FFFFFF; padding-top: 25px;"
 
     movieOriginalTitle.textContent = `${original_title} | ${original_title_romanised}`
     movieOriginalTitle.style = "color: #FFFFFF;"
