@@ -8,40 +8,31 @@ fetch(baseURL)
 .then(D => {
     console.log(D)
     D.forEach(people => { 
-        makePeopleDiv(people.name, people.gender, people.age, people.eye_color, people.hair_color, peopleContainerDiv)
+        makePeopleDiv(people.name, people.gender, people.age, peopleContainerDiv)
     });
 })
 
 // PEOPLE PULL
-const makePeopleDiv = (name, gender, age, eye_color, hair_color, peopleDivForInfo) => {
+const makePeopleDiv = (name, gender, age, peopleDivForInfo) => {
     const peopleDiv = document.createElement('div')
     peopleDiv.setAttribute('id', 'pCard')
     const peopleName = document.createElement('h3')
     const peopleGender = document.createElement('p')
     const peopleAge = document.createElement('p')
-    const peopleEyeColor = document.createElement('p')
-    const peopleHairColor = document.createElement('p')
 
     peopleName.textContent = name
     peopleName.style = "font-weight: 700; color: #FFFFFF;"
 
-    peopleGender.textContent = gender
+    peopleGender.textContent = `Gender: ${gender}`
     peopleGender.style = "color: #FFFFFF"
 
-    peopleAge.textContent = age
+    peopleAge.textContent = `Age: ${age}`
     peopleAge.style = "color: #FFFFFF"
-
-    peopleEyeColor.textContent = eye_color
-    peopleEyeColor.style = "color: #FFFFFF"
-
-    peopleHairColor.textContent = hair_color
-    peopleHairColor.style = "color: #FFFFFF"
 
     peopleDiv.appendChild(peopleName)
     peopleDiv.appendChild(peopleGender)
     peopleDiv.appendChild(peopleAge)
-    peopleDiv.appendChild(peopleEyeColor)
-    peopleDiv.appendChild(peopleHairColor)
+
     peopleDivForInfo.appendChild(peopleDiv)
 }
 
